@@ -1,0 +1,37 @@
+
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.toolbar {
+  width: 100%;
+  padding: 1vw 2vw 0vw 2vw;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.menu {
+  gap: 1em;
+}
+.set-font {
+  font-family: var(--font-family);
+  font-weight: var(--weight);
+}
+.logo {
+  color: var(--color);
+}
+
+.items {
+  color: var(--color);
+}
+
+.order {
+  color: var(--background-color);
+  background-color: var(--background-box);
+  font-size: 13px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+}
