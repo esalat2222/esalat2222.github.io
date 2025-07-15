@@ -1,6 +1,6 @@
 export const sheet = `
 <style>
-     * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,5 +8,6 @@ export const sheet = `
   list-style: none;
   outline: none;
   border: none;
-  </style>
-}`;
+}
+</style>
+  `;
