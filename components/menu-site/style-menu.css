@@ -16,6 +16,9 @@
 
 .menu {
   gap: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .set-font {
   font-family: var(--font-family);
@@ -24,7 +27,6 @@
 .logo {
   color: var(--color);
   cursor: pointer;
-  margin-left: 13vw ;
 }
 
 .items {
@@ -38,24 +40,45 @@
   padding: 5px 10px 5px 10px;
   border-radius: 2px;
 }
+.shopping-cart {
+  position: relative;
+}
 /* style shopping cart icon */
-.material-symbols-outlined {
+.cart-icon {
   color: var(--background-color);
   background-color: var(--background-box);
   padding: 6px;
   cursor: pointer;
   border-radius: 20px;
-  position: relative;
+}
+span.menu-icon {
+  display: none;
+  color: var(--background-box);
+  cursor: pointer;
+
 }
 #counter {
   display: none;
   z-index: 1;
   position: absolute;
-  left: 3.5vw;
-  top: 2.5vw;
+  top: 0;
+  right: 0;
+  transform: translate(35%, 100%);
   width: 20px;
   height: 20px;
   background-color: var(--green-box);
   color: var(--background-color);
   border-radius: 10px;
+}
+
+
+@media (max-width: 730px) {
+  .menu .items{
+    display: none;
+  }
+}
+@media (max-width: 1030px) {
+  .logo {
+    display: none;
+  }
 }
