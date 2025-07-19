@@ -51,12 +51,6 @@
   cursor: pointer;
   border-radius: 20px;
 }
-span.menu-icon {
-  display: none;
-  color: var(--background-box);
-  cursor: pointer;
-
-}
 #counter {
   display: none;
   z-index: 1;
