@@ -63,16 +63,17 @@ body {
 
 .about {
   display: block;
-  padding: 10px;
+  padding: 0.5vw;
   color: var(--background-color);
   background-color: var(--color);
   width: 9vw;
-  border: var(--background-color) solid 3px;
+  border: var(--background-color) solid 0.2vw;
+  font-size: 1.2vw;
 }
 
-.about:hover {
+/* .about:hover {
   box-shadow: var(--background-color) 8px 8px 0px 0px;
-}
+} */
 
 #box_about {
   display: flex;
@@ -91,7 +92,8 @@ body {
 #title_about {
   font-family: var(--font-family);
   font-size: clamp(1rem, 2vw, 2rem);
-  line-height: 27px;
+  line-height: 2.5vw;
+  font-size: 2vw;
 }
 
 #title_box_about {
@@ -103,6 +105,8 @@ body {
 .about-decription {
   width: 70%;
   margin-bottom: 1vw;
+  font-size: 1.3vw;
+
 }
 
 div > #text_about {
