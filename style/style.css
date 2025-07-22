@@ -26,7 +26,7 @@ body {
   background-color: var(--background-color);
   height: 100%;
 }
-
+/*boc about style*/
 .title {
   color: var(--color);
   /* font-size: 70px; */
@@ -71,10 +71,6 @@ body {
   font-size: 1.2vw;
 }
 
-/* .about:hover {
-  box-shadow: var(--background-color) 8px 8px 0px 0px;
-} */
-
 #box_about {
   display: flex;
   flex-direction: row;
@@ -102,7 +98,7 @@ body {
   text-align: start;
 }
 
-.about-decription {
+.about-description {
   width: 70%;
   margin-bottom: 1vw;
   font-size: 1.3vw;
@@ -112,30 +108,7 @@ body {
 div > #text_about {
   width: 50%;
 }
-
-img[alt="ham"] {
-  width: 32vw;
-  display: block;
-}
-
-.box1 {
-  color: var(--color);
-  display: block;
-  position: absolute;
-  /* top: 85%; */
-  bottom: 3%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  background-color: var(--background-color);
-  width: 20vw;
-  border-radius: 20px;
-  padding: 1vw 0vw 1vw 2vw;
-  font-family: var(--font-family);
-}
-
-.box1 > a {
-  color: var(--background-box);
-}
+/*style product components parent*/
 
 #parent_box {
   padding: 0vw 2vw 0vw 0vw;
@@ -144,13 +117,6 @@ img[alt="ham"] {
   overflow-x: scroll;
 }
 
-#parent_box > div {
-  position: relative;
-  margin-right: 2vw;
-}
-#parent_box > div:last-child {
-  margin-right: 0;
-}
 #text-center-site {
   padding: 1vw;
   text-align: center;

@@ -1,0 +1,28 @@
+img[alt="ham"] {
+  width: 32vw;
+  display: block;
+}
+
+.box1 {
+  color: var(--color);
+  display: block;
+  position: absolute;
+  bottom: 3%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  width: 20vw;
+  border-radius: 20px;
+  padding: 1vw 0vw 1vw 2vw;
+  font-family: var(--font-family);
+  z-index: 100;
+}
+
+.box1 > a {
+  color: var(--background-box);
+}
+
+.product {
+  position: relative;
+  margin-right: 2vw;
+}
