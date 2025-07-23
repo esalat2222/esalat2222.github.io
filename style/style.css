@@ -193,3 +193,8 @@ footer {
     margin: 8vw auto 8vw auto;
   }
 }
+@media (max-width: 230px) {
+  body{
+    display: none;
+  }
+}
