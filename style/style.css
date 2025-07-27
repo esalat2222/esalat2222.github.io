@@ -102,7 +102,6 @@ body {
   width: 70%;
   margin-bottom: 1vw;
   font-size: 1.3vw;
-
 }
 
 div > #text_about {
@@ -128,42 +127,6 @@ div > #text_about {
   margin: auto;
   width: 70%;
   margin-bottom: 2vw;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 95%;
-  background-color: var(--background-box);
-  border-radius: 20px;
-  padding: 4vw 3vw 3vw 3vw;
-  margin: auto;
-}
-.title-foot {
-  font-family: var(--font-family);
-}
-.foot-box {
-  display: flex;
-  height: 10vw;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#box-time {
-  line-height: 1.5vw;
-}
-#join-btn {
-  background-color: #99cd3200;
-  border: 1px solid var(--background-color);
-  border-radius: 5px;
-  width: 20vw;
-  padding: 0.5vw 0.25vw 0.5vw 0.25vw;
-  text-align: right;
-  font-family: var(--font-family);
-  color: var(--background-color);
-}
-#pr-po {
-  text-align: right;
 }
 
 @media (max-width: 1240px) {
@@ -194,7 +157,7 @@ footer {
   }
 }
 @media (max-width: 230px) {
-  body{
+  body {
     display: none;
   }
 }
