@@ -4,32 +4,55 @@ footer {
   justify-content: space-between;
   width: 95%;
   background-color: var(--background-box);
-  border-radius: 20px;
+  border-radius: 2vw;
   padding: 4vw 3vw 3vw 3vw;
   margin: auto;
 }
 .title-foot {
   font-family: var(--font-family);
+  font-size: 1.5vw;
 }
 .foot-box {
   display: flex;
-  height: 10vw;
+  /* height: 10vw; */
   flex-direction: column;
   justify-content: space-between;
 }
-#box-time {
-  line-height: 1.5vw;
+.foot-box ul li {
+  margin: 0;
+}
+.foot-box ul {
+  margin: 0;
+  padding: 0;
+}
+.menu-list {
+  font-size: 1.3rem;
+  /* font-size: 1vw; */
+  font-family: var(--font-family);
+  color: var(--background-color);
 }
 #join-btn {
   background-color: #99cd3200;
   border: 1px solid var(--background-color);
-  border-radius: 5px;
-  width: 20vw;
+  /* border-radius: 5px; */
+  border-radius: 0.5vw;
+  /* width: 20vw; */
+  width: 20rem;
   padding: 0.5vw 0.25vw 0.5vw 0.25vw;
   text-align: right;
   font-family: var(--font-family);
   color: var(--background-color);
 }
-#pr-po {
-  text-align: right;
+
+@media (max-width: 768px) {
+  .title-foot {
+    font-size: 2vw;
+  }
+  .menu-list {
+    font-size: 0.7rem;
+  }
+  #join-btn {
+    width: 7rem;
+    font-size: 2vw;
+  }
 }
