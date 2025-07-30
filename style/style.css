@@ -162,24 +162,25 @@ div > #text_about {
   }
 }
 
+.box-order{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:flex-end; */
+  align-items: center;
+  /* text-align: center; */
+}
 .order-pizza {
   display: block;
   margin: 50px auto;
   width: 22rem;
   max-inline-size: 100%;
-  animation: rotatePizza 5s linear infinite;
-}
-@keyframes rotatePizza {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .box-select-pizza {
+  width: 50%;
   position: fixed;
   bottom: 0;
-  left: 30.5vw;
-  width: 600px;
   padding: 20px;
   background-color: var(--background-box);
   display: flex;
@@ -192,9 +193,14 @@ div > #text_about {
 .add-to-cart {
   position: fixed;
   bottom: 10rem;
-  left: 0.5rem;
-  z-index: 10000;
-  /* width: 8%; */
+  padding: 1rem;
+  border-radius: 5px;
+  /* font-size: 1vw; */
+  font-family: var(--font-family);
+  font-weight: var(--weight);
+  background-color: var(--background-box);
+  color: var(--background-color);
+  transform: translateX(-22vw);
 }
 .select-pizza {
   /* display: block; */
@@ -203,34 +209,25 @@ div > #text_about {
   max-inline-size: 100%;
   transition: all 1s linear;
 }
+
 .select-pizza:last-child {
   margin-right: 0;
 }
 .select-pizza:hover {
   transform: scale(1.2);
 }
-
-@media (max-width: 800px) {
-  .box-select-pizza {
-    left: 0;
+@media (max-width: 1000px) {
+  .box-order{
+    display: block;
+  }
+  .box-select-pizza{
     width: 100%;
   }
-}
-@media (min-width: 800px) and (max-width: 900px) {
-  .box-select-pizza {
-    left: 18vw;
-    width: 35rem;
+  .order-pizza{
+    width: 17rem;
   }
-  .add-to-cart {
-    left: 10rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .order-pizza {
-    width: 15rem;
-  }
-  .box-select-pizza {
-    left: 0;
+  .add-to-cart{
+    left: 0.5rem;
+    transform: none;
   }
 }
