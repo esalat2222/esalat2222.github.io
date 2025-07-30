@@ -1,5 +1,6 @@
 import { sheet } from "/js/global-style.js";
 let $ = document;
+let isOrderPage = window.location.pathname.endsWith("order.html");
 
 let template = $.createElement("template");
 template.innerHTML = `
@@ -17,10 +18,15 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wg
 <p class="logo set-font">BURGER HEAVEN</p>
 <ul class="menu">
 <li><a href="#" class="items set-font">ABOUT</a></li>
-<li><a href="#" class="order set-font">ORDER ONLINE</a></li>
+${
+  isOrderPage
+    ? `<span class="material-symbols-outlined home-icon set-font">home</span>`
+    : `<a href="#" class="order set-font">ORDER ONLINE</a>`
+}
 </ul>
 </nav>
 `;
+// <li><a href="#" class="order set-font">ORDER ONLINE</a></li>
 
 class MenuSite extends HTMLElement {
   constructor() {

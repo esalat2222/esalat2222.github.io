@@ -33,6 +33,13 @@
   color: var(--color);
 }
 
+.home-icon{
+  padding: 6px;
+  color: var(--background-color);
+  background-color: var(--background-box);
+  border-radius: 5vw;
+}
+
 .order {
   color: var(--background-color);
   background-color: var(--background-box);
