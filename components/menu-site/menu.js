@@ -17,7 +17,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wg
 </div>
 <p class="logo set-font">BURGER HEAVEN</p>
 <ul class="menu">
-<li><a href="#" class="items set-font">ABOUT</a></li>
+${isOrderPage ? "" : `<li><a href="#" class="items set-font">ABOUT</a></li>`}
 ${
   isOrderPage
     ? `<span class="material-symbols-outlined home-icon set-font">home</span>`
