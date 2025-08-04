@@ -198,7 +198,8 @@ div > #text_about {
   /* font-size: 1vw; */
   font-family: var(--font-family);
   font-weight: var(--weight);
-  background-color: var(--background-box);
+  background-color: var(--green-box);
+  color: var(--background-color);
   color: var(--background-color);
   transform: translateX(-22vw);
 }
