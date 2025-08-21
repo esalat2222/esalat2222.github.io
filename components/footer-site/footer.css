@@ -6,7 +6,7 @@ footer {
   background-color: var(--background-box);
   border-radius: 2vw;
   padding: 4vw 3vw 3vw 3vw;
-  margin: auto;
+  margin: 0 auto;
 }
 .title-foot {
   font-family: var(--font-family);

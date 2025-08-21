@@ -30,3 +30,15 @@ img[alt="ham"] {
   position: relative;
   margin-right: 2vw;
 }
+@media (max-width: 500px) {
+  img[alt="ham"] {
+  width: 98vw !important;
+ }
+ .box1{
+  width: 61.3vw;
+  font-size: 3.7vw;
+  bottom: 5vw;
+  left: 13vw;
+  border-radius: 1.5vw;
+ }
+}

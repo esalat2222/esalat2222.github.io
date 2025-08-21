@@ -4,7 +4,7 @@ let $ = document;
 let template = $.createElement("template");
 template.innerHTML = `
 ${sheet}
-<link rel="stylesheet" href="/components/footer-site/footer.css">
+<link rel="stylesheet" href="/components/footer-site/footer.css"> 
 <footer>
       <div class="foot-box">
         <p class="title-foot">Burger Heaven</p>
