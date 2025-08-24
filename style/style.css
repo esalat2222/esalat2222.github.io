@@ -152,11 +152,32 @@ div > #text_about {
 } */
 @media (max-width: 940px) {
   #box_title {
-    display: none;
+    /* margin: 20vw 20vw 20vw 0; */
+    margin-top: 20vw;
+    margin-left: 48vw;
+    position: static;
+    transform: translate(-50vw, -80px);
+
   }
   #img_burger {
+    /* margin: 8vw auto 8vw auto; */
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #box_title {
+    /* margin: 20vw 20vw 20vw 0; */
+    margin-top: 20vw;
+    margin-left: 48vw;
     position: static;
-    margin: 8vw auto 8vw auto;
+    /* right: 0;
+    left: 0;
+    bottom: 0; */
+    transform: translate(-50vw, -50px);
+  }
+  #img_burger {
+    /* margin: 8vw auto 8vw auto; */
+    display: none;
   }
 }
 @media (max-width: 230px) {
