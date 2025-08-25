@@ -52,7 +52,13 @@ footer {
     font-size: 0.7rem;
   }
   #join-btn {
-    width: 7rem;
+    width: 12rem;
     font-size: 2vw;
+  }
+}
+
+@media (max-width: 550px) {
+  #join-btn {
+    width: 8rem;
   }
 }
