@@ -20,6 +20,7 @@ html {
   --green-box: #d1ef53;
   --font-family: "Bowlby One", sans-serif;
   --weight: bold;
+  --size-title: 4.4vw;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
 .title {
   color: var(--color);
   /* font-size: 70px; */
-  font-size: 4.4vw;
+  font-size: calc(var(--size-title));
   text-align: center;
   margin: 0;
   line-height: 1em;
@@ -157,7 +158,6 @@ div > #text_about {
     margin-left: 48vw;
     position: static;
     transform: translate(-50vw, -80px);
-
   }
   #img_burger {
     /* margin: 8vw auto 8vw auto; */
@@ -166,18 +166,17 @@ div > #text_about {
 }
 @media (max-width: 500px) {
   #box_title {
-    /* margin: 20vw 20vw 20vw 0; */
     margin-top: 20vw;
     margin-left: 48vw;
     position: static;
-    /* right: 0;
-    left: 0;
-    bottom: 0; */
     transform: translate(-50vw, -50px);
   }
   #img_burger {
     /* margin: 8vw auto 8vw auto; */
     display: none;
+  }
+  .title {
+    font-size: calc(var(--size-title) + 12px);
   }
 }
 @media (max-width: 230px) {
@@ -186,7 +185,7 @@ div > #text_about {
   }
 }
 
-.box-order{
+.box-order {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -242,16 +241,16 @@ div > #text_about {
   transform: scale(1.2);
 }
 @media (max-width: 1000px) {
-  .box-order{
+  .box-order {
     display: block;
   }
-  .box-select-pizza{
+  .box-select-pizza {
     width: 100%;
   }
-  .order-pizza{
+  .order-pizza {
     width: 17rem;
   }
-  .add-to-cart{
+  .add-to-cart {
     left: 0.5rem;
     transform: none;
   }
