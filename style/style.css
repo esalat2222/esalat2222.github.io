@@ -20,7 +20,8 @@ html {
   --green-box: #d1ef53;
   --font-family: "Bowlby One", sans-serif;
   --weight: bold;
-  --size-title: 4.4vw;
+  --size-logo: 4.4vw;
+  --sizeTitleAbout:2vw;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 .title {
   color: var(--color);
   /* font-size: 70px; */
-  font-size: calc(var(--size-title));
+  font-size: calc(var(--size-logo));
   text-align: center;
   margin: 0;
   line-height: 1em;
@@ -55,6 +56,7 @@ body {
   margin-right: auto;
   /* margin-top: 14vw; */
   margin-top: 210px;
+  margin-bottom: 3vw;
   width: 90vw;
   max-inline-size: 100%;
   /* aspect-ratio: 2/1; */
@@ -83,14 +85,13 @@ body {
   background-color: var(--green-box);
   height: 13vw;
   border-radius: 2vw;
-  margin-bottom: 2vw;
 }
 
 #title_about {
   font-family: var(--font-family);
-  font-size: clamp(1rem, 2vw, 2rem);
+  /* font-size: clamp(1rem, 2vw, 2rem); */
   line-height: 2.5vw;
-  font-size: 2vw;
+  font-size: var(--sizeTitleAbout);
 }
 
 #title_box_about {
@@ -111,7 +112,7 @@ div > #text_about {
 /*style product components parent*/
 
 #parent_box {
-  margin-top: 10vw;
+  margin-top: 5vw;
   margin-bottom: 5vw;
   padding: 0vw 2vw 0vw 0vw;
   display: flex;
@@ -164,6 +165,8 @@ div > #text_about {
     display: none;
   }
 }
+
+
 @media (max-width: 500px) {
   #box_title {
     margin-top: 20vw;
@@ -176,9 +179,34 @@ div > #text_about {
     display: none;
   }
   .title {
-    font-size: calc(var(--size-title) + 12px);
+    font-size: calc(var(--size-logo) + 12px);
   }
+#title_about{
+  font-size: calc(var(--sizeTitleAbout) + 6px);
+  line-height: calc(2.5vw + 7px);
 }
+#box_about{
+  width: 80%;
+  height: calc(13vw + 20px);
+}
+
+#title_box_about{
+  width: 32%;
+}
+
+.about-description{
+  font-size: calc(1.3vw + 3px);
+  width: 100%;
+}
+
+.about{
+  font-size: calc(1.2vw + 3px);
+  width: calc(9vw + 10px);
+}
+
+}
+
+
 @media (max-width: 230px) {
   body {
     display: none;
